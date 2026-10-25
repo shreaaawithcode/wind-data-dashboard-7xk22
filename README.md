@@ -9,7 +9,7 @@ Scope: purchase decisions made in **January 2026** (decision on day D-1, deliver
 
 > **AI disclosure:** this project was built with AI assistance (Claude by Anthropic) for code generation and scaffolding. Design decisions and the analysis logic should be reviewed by the author before submission.
 
-**Live app:** `TODO – add Vercel URL here after deploying`
+**Live app:** https://kjhwr-nu.vercel.app
 
 ## How the analysis works
 
