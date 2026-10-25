@@ -2,5 +2,9 @@
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "functions": { "api/index.py": { "includeFiles": "data/**" } },
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }]
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
