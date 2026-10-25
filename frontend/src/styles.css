@@ -1,0 +1,35 @@
+:root {
+  --bg: #f5f7fa; --card: #fff; --text: #17212b; --muted: #5d6b7a; --line: #e2e8ef;
+  --forecast: #2f6fdd; --actual: #e0782b; --band: #cfe0fb; --grid: #e6ebf1;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1419; --card: #182029; --text: #e8eef4; --muted: #93a1b0; --line: #26313d;
+    --forecast: #6aa2ff; --actual: #ffa05a; --band: #2a4470; --grid: #26313d; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; }
+.page { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 16px; }
+h1 { margin: 0; font-size: 26px; }
+h2 { margin: 0 0 4px; font-size: 17px; }
+.lede, .sub, .note, footer { color: var(--muted); }
+.lede { margin: 4px 0 0; max-width: 560px; }
+.sub { margin: 0 0 12px; font-size: 13px; }
+.controls { display: flex; gap: 12px; flex-wrap: wrap; }
+label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); gap: 4px; }
+input { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid2 .card { margin-bottom: 0; }
+.grid2 + .card, .grid2 { margin-bottom: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.kpi { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.kpi-label { font-size: 12px; color: var(--muted); }
+.kpi-value { font-size: 22px; font-weight: 650; }
+.kpi-unit { font-size: 12px; font-weight: 400; color: var(--muted); }
+.kpi-hint { font-size: 11px; color: var(--muted); }
+.note { font-size: 13px; margin: 4px 0 0; }
+.banner { padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; }
+.banner.warn { background: #fff3cd; color: #5c4400; border: 1px solid #f0d77a; }
+footer { font-size: 12px; margin-top: 8px; }
+@media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }

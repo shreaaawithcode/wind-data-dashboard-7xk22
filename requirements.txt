@@ -1,0 +1,7 @@
+# Vercel serverless Python dependencies (api/index.py).
+# uvicorn is NOT needed here — Vercel invokes the ASGI app directly.
+# For running the server locally/Docker use: backend/requirements.txt
+fastapi==0.115.*
+pandas==2.2.*
+numpy<2.3
+httpx==0.27.*

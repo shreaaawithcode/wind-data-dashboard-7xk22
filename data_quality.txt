@@ -1,0 +1,4 @@
+  File "<string>", line 17
+    print(f'First delivery: {df[\
+          ^
+SyntaxError: unterminated string literal (detected at line 17)

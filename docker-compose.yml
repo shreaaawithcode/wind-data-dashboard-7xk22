@@ -1,0 +1,11 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/srv/data
+    environment:
+      DEMO_DATA: ${DEMO_DATA:-}
+      DEFAULT_CUTOFF: ${DEFAULT_CUTOFF:-09:00}

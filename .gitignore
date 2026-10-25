@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+**/node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Deployment
+.vercel/
+
+# Local files
+.DS_Store
+Thumbs.db
+*.log
